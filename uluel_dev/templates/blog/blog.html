@@ -30,7 +30,7 @@
                         <h4 class="title mb-5">
                             <a href="{{ item.slug }}">{{ item.title }}</a>
                         </h4>
-                        <p>{{ item.content|truncatechars:9  }}</p>
+                        <p>{{ item.description|truncatechars:300  }}</p>
                         Author: <strong> {{ item.author }} </strong>
                     </div>
                 </div>

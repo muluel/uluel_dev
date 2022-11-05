@@ -11,6 +11,7 @@ from uluel_dev.util import unique_slug_generator
 
 class Article(models.Model):
   title = models.CharField(max_length=200)
+  description = models.TextField(null=True, blank=True)
   header_image = models.ImageField(upload_to='blogs', null=True, blank=True)
   content = tinymce_models.HTMLField()
   author = models.ForeignKey(User, on_delete=models.CASCADE)

@@ -22,7 +22,7 @@
                     Opps...
                 {% else %}
                 <h1 class="title mb-5">{{ object.title }}</h1>
-
+                <p>{{ object.description }}</p>
                 <img src="{{ object.header_image.url }}" class="img-fluid img-thumbnail" alt="">
                 {{ object.content | safe}}
                 <br>
